@@ -14,17 +14,19 @@
             height: auto;
             display: block;
         }
+        /* Opcional: mostrar los enlaces durante pruebas */
+        /* a { border: 1px solid red; } */
     </style>
 </head>
 <body>
-    <!-- Imagen principal con mapa -->
-    <img src="cursoMovil.png" alt="Curso" usemap="#zonas">
+    <div style="position:relative; width:100%; max-width:1300px;">
+        <img src="cursoMovil.png" alt="Curso">
 
-<map name="zonas">
-    <area shape="rect" coords="15,40,390,160" href="indexMovil.html" alt="inicio" data-coords="15,40,390,160">
-    <area shape="rect" coords="400,50,1080,160" href="estrategiasMovil.html" alt="estrategias" data-coords="400,50,1080,160">
-    <area shape="rect" coords="220,380,850,470" href="operativasmovil.html" alt="operativas" data-coords="220,380,850,470">
-</map>
+        <!-- Botones invisibles sobre la imagen -->
+        <a href="indexMovil.html" style="position:absolute; top:30px; left:15px; width:375px; height:120px; display:block;"></a>
+        <a href="estrategiasMovil.html" style="position:absolute; top:40px; left:400px; width:680px; height:120px; display:block;"></a>
+        <a href="operativasmovil.html" style="position:absolute; top:370px; left:220px; width:630px; height:100px; display:block;"></a>
+    </div>
 </body>
 </html>
 
